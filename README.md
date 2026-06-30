@@ -14,32 +14,6 @@ projectbot/
 └── README.md        ← ten plik
 ```
 
-## Zmienne środowiskowe (ustaw w Render)
-
-```
-TELEGRAM_TOKEN = token od @BotFather
-GROQ_API_KEY   = klucz z console.groq.com
-```
-
-## Wdrożenie na Render (darmowe, bez karty kredytowej)
-
-1. Wejdź na render.com → zarejestruj się przez GitHub
-2. Kliknij **New +** → **Web Service**
-3. Wybierz repozytorium `projectbot`
-4. Ustawienia builda:
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `python bot.py`
-5. Dodaj zmienne środowiskowe (Environment): `TELEGRAM_TOKEN`, `GROQ_API_KEY`
-6. Plan: **Free**
-7. Kliknij **Create Web Service**
-
-Bot zawiera mini-serwer HTTP (wbudowany w bot.py), dzięki czemu Render
-rozpoznaje go jako "Web Service" i hostuje za darmo — bez tego Render
-wymagałby płatnego planu "Background Worker".
-
-Pamiętaj o Uptime Robot — Render usypia darmowe serwisy po 15 min
-bezczynności, więc monitor pingujący co 5 minut jest konieczny.
-
 ## Komendy bota
 
 | Komenda | Opis |
