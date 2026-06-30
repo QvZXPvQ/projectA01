@@ -1,17 +1,15 @@
 # ProjectBot — Bot Telegram do Zarządzania Projektami
 
-Bot działa 24/7, jest darmowy i nie wymaga karty kredytowej.
-
 ## Struktura plików
 
 ```
 projectbot/
-├── bot.py           ← główny kod bota
-├── database.py      ← obsługa bazy danych SQLite
-├── ai_helper.py     ← integracja z Groq AI
-├── requirements.txt ← biblioteki Python
-├── Procfile         ← konfiguracja dla Koyeb
-└── README.md        ← ten plik
+├── bot.py           
+├── database.py      
+├── ai_helper.py     
+├── requirements.txt 
+├── Procfile        
+└── README.md        
 ```
 
 ## Komendy bota
